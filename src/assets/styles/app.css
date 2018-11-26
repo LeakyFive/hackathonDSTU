@@ -1,0 +1,107 @@
+/* #app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+} */
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri.eot');
+  src: url('../fonts/Calibri.eot') format('embedded-opentype'),
+      url('../fonts/Calibri.woff2') format('woff2'),
+      url('../fonts/Calibri.woff') format('woff'),
+      url('../fonts/Calibri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Calibri';
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+a{
+  text-decoration: none;
+}
+html{
+  font-size: 18px;
+}
+
+
+.wrapper{
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+/* Шапка */
+header {
+  padding: 10px 0;
+  width: 100%;
+  height: 90px;
+  background-color: #4380d3;
+}
+header > .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+header > .wrapper > a {
+  padding: 35px;
+  background-color: #bbb;
+  background: url('../img/logo.svg') no-repeat;
+  background-size: cover;
+  display: block;
+}
+header > .wrapper > a {
+  color: #fff;
+  text-decoration: none;
+}
+header > .wrapper > ul{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+header li {
+  margin: auto 0;
+}
+header li > a {
+  padding: 10px 30px;
+  margin: auto 0;
+  color: white;
+}
+header li:last-child > a {
+  padding: 10px 40px;
+  border-radius: 50px;
+  background-color: #284c7e;
+}
+
+main > .wrapper:first-child section{
+  width: 100%;
+  height: 80vh;
+  margin-top: 40px;
+  background-color: red;
+  display: flex;
+}
+main > .wrapper:first-child section h1{
+  margin: auto;
+  font-size: 5rem;
+}
+main h2{
+  margin-top: 100px;
+}
